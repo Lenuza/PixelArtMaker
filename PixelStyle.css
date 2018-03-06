@@ -1,0 +1,90 @@
+html {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: gray;
+  background: linear-gradient(to bottom right, #999, #fff);/* ( linear-gradient(to bottom right, #999999, #ffffff) weird with image it works without the gradient is only on the body, which does not include the area */
+  background-position: left;   /* where the table will be createrd, in the same time this area is in the body in the html? had to make height `100vh`*/
+  background-repeat: repeat-y;
+  width: 75%;
+  height: 100vh;
+  padding-left: 5%;
+
+}
+
+#wrapper {
+  border-top: 2px solid rgba(6,6,6,0.5);
+  border-bottom: 2px solid rgba(6,6,6,0.5);
+  margin-bottom: 10px;
+
+}
+
+p {
+  margin-left: 5px;
+}
+
+form {
+  margin-bottom: 5px;
+}
+
+header {
+  font-size: 1.8em;
+  text-decoration: underline;
+  margin-left: 5px;
+
+}
+#howToClearACell {
+  font-size: 0.8em;
+  color: #555555;
+}
+
+/**********Buttons and input styles*****/
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  /*https://css-tricks.com/snippets/css/turn-off-number-input-spinners/*/
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.button {
+  border-color: #999;
+  border-radius: 3px;
+  height: 25px;
+}
+
+#addRow, #addColumn {
+  width: 40px;
+  height: 25px;
+  border-color: #999;
+  border-radius: 3px;
+}
+
+#colorPick, .button {
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+/****** Table styles**********/
+
+table, tr, td {
+  border: 1px solid #999;
+  border-spacing: 0px;
+  background-color: #fff;
+}
+
+tr, td {
+  width: 10px;
+  height: 10px;
+}
+
+#tableDiv {
+  border-bottom:
+  2px solid rgba(6,6,6,0.5);
+  padding-bottom: 10px;
+}

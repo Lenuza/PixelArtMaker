@@ -1,0 +1,51 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width:device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="PixelStyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.0.js"></script>
+  <!--src="//code.jquery.com/jquery-1.11.1.min.js" Used this before, but now I get errors so changed it-->
+  <script src="PixelArt.js"></script>
+  <title> PixelArt Maker</title>
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <div id="colorWrap">
+      <header>
+        PixelArt Maker
+      </header>
+      <p>
+        Choose a color:
+        <span>
+        <input type="color"  id="colorPick">
+
+        </span>
+      </p>
+    </div>
+    <div class="controls">
+      <form id="gridForm">
+        <input type="number"  max="50" id="addRow">Rows</input>
+        <input type="number"  max="100" id="addColumn">Columns</input>
+        <button type="button" id="makeGrid" class="button">Make Grid</button>
+        <button type="button" id="clearGrid" class="button"> Clear Grid</button>
+        <button type="button" id="deleteGrid" class="button">Delete Grid</button>
+      </form>
+
+    </div>
+  </div>
+
+  <div id="tableDiv">
+
+  </div>
+  <p id="howToClearACell">
+    To clear the content of a single cell just double click on it.
+  </p>
+
+</body>
+
+</html>
